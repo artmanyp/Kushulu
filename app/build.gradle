@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.kushulu.app'
+    compileSdk 37
+    buildToolsVersion "37.0.0"
+
+    defaultConfig {
+        applicationId "com.kushulu.app"
+        // minSdk 21 = Android 5.0 Lollipop (the oldest level AGP supports)
+        minSdk 21
+        // targetSdk 37 = highest level AGP 9.5 supports
+        targetSdk 37
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    // Release signing is optional and comes from environment variables
+    // (set by the GitHub Actions workflow). Without them, release stays unsigned.
+    signingConfigs {
+        release {
+            def keystorePath = System.getenv('KEYSTORE_FILE')
+            if (keystorePath) {
+                storeFile file(keystorePath)
+                storePassword System.getenv('KEYSTORE_PASSWORD')
+                keyAlias System.getenv('KEY_ALIAS')
+                keyPassword System.getenv('KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv('KEYSTORE_FILE')) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        // Java 17 = the newest LTS that Android documents as supported.
+        // Gradle itself runs on JDK 25 (gradle/gradle-daemon-jvm.properties).
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// No dependencies on purpose: the app uses plain platform views only (no AndroidX),
+// so it follows the device's own theme and style and works on every form factor.

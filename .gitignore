@@ -1,0 +1,13 @@
+# Gradle / Android Studio (per-machine files, never commit)
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing keys: never commit these
+*.jks
+*.keystore

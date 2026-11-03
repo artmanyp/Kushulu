@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kushulu</string>
+    <string name="brand_en" translatable="false">Kushulu</string>
+    <string name="brand_fa" translatable="false">کوشولو</string>
+    <string name="view_in_play_store">View in Play Store</string>
+    <string name="not_installed">Not installed</string>
+    <string name="installed_fmt">Installed: %1$s (%2$d)</string>
+    <string name="cannot_open">Couldn\'t open the link</string>
+    <!-- Copyright line: must stay in the footer of the app. -->
+    <string name="copyright" translatable="false">Designed and coded with ❤️ by Artman Yousefpour (artmanyp89@gmail.com)</string>
+</resources>
