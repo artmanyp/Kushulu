@@ -30,8 +30,8 @@
 
 شناسهٔ بسته `com.kushulu.app`، نام برنامه «Kushulu» (روی دستگاه‌هایی که زبانشان فارسی است «کوشولو» نمایش داده می‌شود).
 
-- **AGP:** 9.5.0
-- **Gradle wrapper:** 9.8.2
+- **AGP:** 9.5.1
+- **Gradle wrapper:** 9.9.0
 - **Android Studio (لازم برای ساخت):** آخرین نسخهٔ پایدار، نه Canary/Beta/RC — در حال حاضر 2026.2.2
 - **Android Studio (آزمایش‌شده با):** 2026.2.2 که JetBrains Runtime (JBR) نسخهٔ **25** را همراه دارد
 - **Java:** سطح سورس و تارگت 17 (جدیدترین LTS که اندروید رسماً پشتیبانی می‌کند)؛ خود Gradle روی **JDK 25** اجرا می‌شود که همان JBR همراه Android Studio است و در `gradle/gradle-daemon-jvm.properties` ثابت شده است

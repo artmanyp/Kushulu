@@ -36,8 +36,8 @@ provides them). The copyright line stays pinned in the footer.
 
 Package `com.kushulu.app`, app name "Kushulu" (shown as "کوشولو" on Persian-language devices).
 
-- **AGP:** 9.5.0
-- **Gradle wrapper:** 9.8.2
+- **AGP:** 9.5.1
+- **Gradle wrapper:** 9.9.0
 - **Android Studio (required to build):** the latest stable release, not Canary/Beta/RC — currently 2026.2.2
 - **Android Studio (tested with):** 2026.2.2, which bundles JetBrains Runtime (JBR) **25**
 - **Java:** source and target level 17 (the newest LTS that Android documents as supported); Gradle itself runs on **JDK 25** = Android Studio's bundled JBR, pinned in `gradle/gradle-daemon-jvm.properties`
