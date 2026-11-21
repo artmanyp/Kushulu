@@ -36,7 +36,7 @@ provides them). The copyright line stays pinned in the footer.
 
 Package `com.kushulu.app`, app name "Kushulu" (shown as "کوشولو" on Persian-language devices).
 
-- **AGP:** 9.5.1
+- **AGP:** 9.5.2
 - **Gradle wrapper:** 9.9.1
 - **Android Studio (required to build):** the latest stable release, not Canary/Beta/RC — currently 2026.2.2
 - **Android Studio (tested with):** 2026.2.2, which bundles JetBrains Runtime (JBR) **25**
